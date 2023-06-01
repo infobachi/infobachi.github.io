@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Laboratorio de Análisis Clínicos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    #container {
+      width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+    
+    #lab-image {
+      float: right;
+      margin: 0 0 20px 20px;
+      opacity: 0;
+      animation: fade-in 1s ease-in-out forwards;
+    }
+    
+    .section-heading {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+      opacity: 0;
+      animation: fade-in 1s ease-in-out forwards;
+    }
+    
+    .section-content {
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fade-in 1s ease-in-out forwards;
+    }
+    
+    .chemical-image {
+      width: 200px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fade-in 1s ease-in-out forwards;
+    }
+    
+    .contact-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fade-in 1s ease-in-out forwards;
+    }
+    
+    .contact-table th,
+    .contact-table td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    
+    .contact-table th {
+      background-color: #77dd77;
+      color: #333;
+      font-weight: bold;
+    }
+    
+    .contact-table td {
+      background-color: #e6ffe6;
+      color: #333;
+    }
+    
+    .message-box {
+      background-color: #e6e6e6;
+      padding: 10px;
+      opacity: 0;
+      animation: fade-in 1s ease-in-out forwards;
+    }
+    
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>Laboratorio de Análisis Clínicos</h1>
+  </div>
+  
+  <div id="container">
+    <img id="lab-image" src="laboratory.jpg" alt="Laboratorio de Análisis Clínicos">
+    
+    <h2 class="section-heading">Bienvenido al laboratorio de análisis clínicos</h2>
+    
+    <div class="section-content">
+      <p>En nuestro laboratorio, ofrecemos una amplia gama de servicios de análisis clínicos para ayudar en el diagnóstico y tratamiento de enfermedades. Contamos con un equipo de profesionales altamente capacitados y tecnología de vanguardia para garantizar resultados precisos y confiables.</p>
+    </div>
+    
+    <h2 class="section-heading">Servicios de laboratorio</h2>
+    
+    <div class="section-content">
+      <p>Realizamos análisis de sangre, orina, heces y otros tipos de muestras biológicas. Nuestros servicios incluyen pruebas de laboratorio comunes, como análisis de glucosa, perfil lipídico, pruebas de función renal y hepática, así como pruebas más especializadas para el diagnóstico de enfermedades infecciosas, trastornos endocrinos, enfermedades genéticas y mucho más.</p>
+    </div>
+    
+    <h2 class="section-heading">Horario de atención</h2>
+    
+    <div class="section-content">
+      <p>Nuestro laboratorio está abierto de lunes a viernes de 8:00 a.m. a 6:00 p.m. y los sábados de 9:00 a.m. a 1:00 p.m. Estamos comprometidos a brindar un servicio eficiente y oportuno a nuestros pacientes.</p>
+    </div>
+    
+    
+    
+    <table class="contact-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Teléfono</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>1234567890</td>
+          <td>john.doe@example.com</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>0987654321</td>
+          <td>jane.smith@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <h2 class="section-heading">Envíanos un mensaje</h2>
+    
+    <div class="message-box">
+      <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+

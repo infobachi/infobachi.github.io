@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bachi preguntas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #fbf9ff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(20, 126, 25, 0.932);
+    }
+
+    h1 {
+      color:rgba(20, 126, 25, 0.932);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgb(255, 255, 255);
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(20, 126, 25, 0.932);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        animation-name: moveFooter;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bachi Preguntas</h1>
+    <p>Bienvenido/a a nuestra página escolar de resolución de dudas. Si tienes alguna pregunta o necesitas ayuda con alguna asignatura, no dudes en preguntar. Estamos aquí para ayudarte.</p>
+
+    <form>
+      <h2>Haz tu pregunta</h2>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="question">Pregunta:</label>
+      <textarea id="question" name="question" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Preguntas frecuentes</h2>
+    <div class="question">
+      <h3>¿Cuál es el horario de clases?</h3>
+      <p>El horario de clases varía según el grado y la sección. Puedes consultar el horario actualizado en el área de administración del plantel o solicitarlo a tu tutor.</p>
+    </div>
+
+    <div class="question">
+      <h3>¿Dónde puedo obtener información sobre las actividades extracurriculares?</h3>
+      <p>En la sección de actividades extracurriculares de nuestra página web encontrarás información sobre los clubes, talleres y eventos disponibles. También puedes preguntar en la coordinación de actividades estudiantiles.</p>
+    </div>
+  </div>
+</body>
+
+<footer>
+    <p>&copy; 2023 Bachillerato Plantel 5. Todos los derechos reservados.</p>
+  </footer>
+</html>
